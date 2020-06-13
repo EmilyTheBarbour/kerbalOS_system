@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////
-////                Craft_UI
+////                Low_Kerb_Orbit
 ///////////////////////////////////////////////
 //
 // This lexicon holds information related to 
@@ -112,7 +112,7 @@ print_message("Insert Burn of " + round(dv, 2) + "m/s will take " + round(burn_t
 
 // start the burn at 1/2 burn time before apoapsis
 // plus 5 seconds to allow for 10 seconds of slower burn to get a nicer orbit
-local start_burn_time is (missionTime + eta:apoapsis) - (burn_time / 2).
+local start_burn_time is (missionTime + eta:apoapsis) - calc_burn_time(dv / 2).
 local end_burn_time is start_burn_time + burn_time.
 
 // register with the UI
