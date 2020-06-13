@@ -42,11 +42,12 @@
 ///////////////////////////////////////////////
 
 // load the modules
-runOncePath("0:/modules/hohmann.ks").
-runOncePath("0:/modules/burn_time.ks").
-runOncePath("0:/modules/auto_stage.ks").
-runOncePath("0:/modules/craft_ui.ks").
+runOncePath("0:/modules/planning/hohmann.ks").
+runOncePath("0:/modules/dynamics/burn_time.ks").
+runOncePath("0:/modules/control/auto_stage.ks").
+runOncePath("0:/modules/ui/craft_ui.ks").
 runOncePath("0:/modules/definitions.ks").
+runOncePath("0:/modules/planning/current_maneuver.ks").
 
 // enable system ui
 enable_UI().

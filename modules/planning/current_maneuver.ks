@@ -45,6 +45,8 @@
 //
 ///////////////////////////////////////////////
 
+runOncePath("0:/modules/definitions.ks").
+
 // create the lexicon to store maneuver state
 local current_maneuver is lexicon().
 set current_maneuver[IS_ACTIVE] to false.
